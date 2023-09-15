@@ -1,0 +1,6 @@
+-- Altera para uma nova coluna as informações que substituímos em outra coluna --
+Sexo Texto = SWITCH(Vendas[Gênero], "M", "Masculino", "F", "Feminino", Vendas[Gênero])
+
+-- Concatenar as informações de duas colunas --
+Nome completo = Vendas[Nome] & " " & Vendas[Sobrenome]
+
